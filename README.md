@@ -1,3 +1,3 @@
-# Data-Hanterare
+# Data Hanterare
 
-Data Hanterare som är skappat med python 
+Skappat med python
