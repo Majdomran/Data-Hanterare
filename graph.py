@@ -1,9 +1,5 @@
 import PySimpleGUI as sg
-import subprocess
-import os
 
-def guide():
-    subprocess.run([os.sys.executable, 'guide.py'])
 
 sg.theme('DarkRed')
 sg.set_options(font='Franklin 14', button_element_size=(6, 3))
@@ -13,12 +9,12 @@ sg.set_options(font='Franklin 14', button_element_size=(6, 3))
 while True:
     layout = [
         [sg.Text(
-            '!! IMPORT DATA FIRST !!',
+            '!! GRAPH MAKER !!',
             font='Franklin 14',
             justification='center',
             expand_x=True,
             key='-TEXT-')],
-        [sg.Button('GRAPH', expand_x=True), sg.Button('SORT', expand_x=True), sg.Button('GUIDE', expand_x=True), sg.Button('IMPORT DATA', expand_x=True)],
+        [sg.Button('CREATE GRAPH', expand_x=True), sg.Button('BACK TO MAIN', expand_x=True)],
     ]
 
     window = sg.Window('Data Hanterare ~By Majd', layout)
@@ -31,13 +27,8 @@ while True:
         if event == 'GRAPH':
             print('graph')
         
-        if event == 'SORT':
-            print('sort')
+        if event == 'BACK':
+            print('BACK')
         
-        if event == 'GUIDE':
-            guide()
-        
-        if event == 'IMPORT DATA':
-            print('import data')
 
     window.close() # MAJD
