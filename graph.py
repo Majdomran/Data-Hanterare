@@ -1,4 +1,9 @@
 import PySimpleGUI as sg
+import subprocess
+import os
+
+def main():
+    subprocess.run([os.sys.executable, 'main.py'])
 
 
 sg.theme('DarkRed')
@@ -27,8 +32,7 @@ while True:
         if event == 'GRAPH':
             print('graph')
         
-        if event == 'BACK':
-            print('BACK')
-        
+        if event == 'BACK TO MAIN':
+            main()
 
     window.close() # MAJD

@@ -5,6 +5,15 @@ import os
 def guide():
     subprocess.run([os.sys.executable, 'guide.py'])
 
+def graph():
+    subprocess.run([os.sys.executable, 'graph.py'])
+
+def sort():
+    subprocess.run([os.sys.executable, 'sort.py'])
+
+def data():
+    subprocess.run([os.sys.executable, 'import_data.py'])
+
 sg.theme('DarkRed')
 sg.set_options(font='Franklin 14', button_element_size=(6, 3))
 
@@ -29,15 +38,15 @@ while True:
             break
 
         if event == 'GRAPH':
-            print('graph')
+            graph()
         
         if event == 'SORT':
-            print('sort')
+            sort()
         
         if event == 'GUIDE':
             guide()
         
         if event == 'IMPORT DATA':
-            print('import data')
+            data()
 
     window.close() # MAJD

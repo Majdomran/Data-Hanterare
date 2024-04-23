@@ -13,7 +13,8 @@ sg.set_options(font='Franklin 14', button_element_size=(6, 3))
 while True:
     layout = [
 [sg.Text(
-'''1. 
+'''!! GUIDE !!
+1. 
 2.
 3. 
 4.
