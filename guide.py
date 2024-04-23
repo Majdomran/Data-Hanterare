@@ -13,11 +13,23 @@ sg.set_options(font='Franklin 14', button_element_size=(6, 3))
 while True:
     layout = [
 [sg.Text(
-'''!! GUIDE !!
-1. 
-2.
-3. 
-4.
+'''HOW TO RUN THE APP:
+    1. OPEN THE FOLDER 
+    2. OPEN TERMINAL
+    3. TYPE "python main.py"
+    4. DONE :)
+
+HOW TO IMPORT DATA:
+    1. PRESS THE IMPORT DATA BUTTON
+    2. 
+
+HOW TO MAKE GRAPH:
+    1.
+    2.
+
+HOW TO SORT:
+    1.
+    2.
 ''',
             font='Franklin 14',
             justification='left',
