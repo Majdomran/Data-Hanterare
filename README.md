@@ -7,7 +7,8 @@
 
 #### - CHECK OUT THE GUIDE
 #### - RUN THE MAIN FILE IN TERMINAL:
-    type "python main.py" in terminal
+####  type in terminal:
+    python main.py
 <hr>
 
 ### NOTE:
