@@ -29,7 +29,7 @@ while True:
         if event == sg.WIN_CLOSED:
             break
 
-        if event == 'GRAPH':
+        if event == 'CREATE GRAPH':
             print('graph')
         
         if event == 'BACK TO MAIN':

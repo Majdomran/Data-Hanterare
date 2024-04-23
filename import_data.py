@@ -29,7 +29,7 @@ while True:
             break
 
         if event == 'IMPORT DATA':
-            print('graph')
+            print('data')
         
         if event == 'BACK TO MAIN':
             main()
