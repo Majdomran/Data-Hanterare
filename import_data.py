@@ -1,6 +1,8 @@
 import PySimpleGUI as sg
 import subprocess
 import os
+import pandas as pd
+
 
 def main():
     subprocess.run([os.sys.executable, 'main.py'])
@@ -18,7 +20,7 @@ while True:
             justification='center',
             expand_x=True,
             key='-TEXT-')],
-        [sg.Button('IMPORT DATA', expand_x=True), sg.Button('BACK TO MAIN', expand_x=True)],
+        [sg.Button('IMPORT DATA', expand_x=True),sg.Button('READ DATA', expand_x=True), sg.Button('BACK TO MAIN', expand_x=True)],
     ]
 
     window = sg.Window('Data Hanterare ~By Majd', layout)
@@ -33,6 +35,11 @@ while True:
         
         if event == 'BACK TO MAIN':
             main()
+
+        if event == 'READ DATA':
+            my_file = open("elever.csv", "r")
+            print(my_file.read())
+    
         
 
     window.close() # MAJD
