@@ -1,7 +1,6 @@
 import PySimpleGUI as sg
 import subprocess
 import os
-import pandas as pd
 
 
 def main():
