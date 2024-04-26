@@ -21,6 +21,7 @@ while True:
             expand_x=True,
             key='-TEXT-')],
         [sg.Button('IMPORT DATA', expand_x=True),sg.Button('READ DATA', expand_x=True), sg.Button('BACK TO MAIN', expand_x=True)],
+        [sg.InputText(key="file_path"), sg.FileBrowse()],
     ]
 
     window = sg.Window('Data Hanterare ~By Majd', layout)
@@ -31,14 +32,15 @@ while True:
             break
 
         if event == 'IMPORT DATA':
-            print('data')
+            file_path = values["file_path"]
+            if file_path:
+                sg.popup(f"Selected file: {file_path}")
         
         if event == 'BACK TO MAIN':
             main()
 
         if event == 'READ DATA':
-            my_file = open("elever.csv", "r")
-            print(my_file.read())
+            print('test')
     
         
 
