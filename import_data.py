@@ -57,8 +57,3 @@ while True:
                         sg.popup_scrolled(file_contents)
                 except FileNotFoundError:
                     sg.popup_error(f'Error: File "{selected_file_path}" not found.')
-
-    
-        
-
-    window.close() # MAJD

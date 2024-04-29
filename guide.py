@@ -23,6 +23,8 @@ HOW TO IMPORT DATA:
     1. PRESS THE BROWSE BUTTON
     2. SELLECT THE DATA FILE YOU WANT
     3. PRESS IMPORT DATA TO CHECK IF YOU CHOSE RIGHT FILE
+    4. PRESS READ DATA TO CHECK THE DATA
+    5. DONE :)
 
 HOW TO MAKE GRAPH:
     1.
@@ -50,6 +52,3 @@ HOW TO SORT:
         if event == 'BACK TO MAIN':
             window.close()
             main()
-        
-
-    window.close() # MAJD

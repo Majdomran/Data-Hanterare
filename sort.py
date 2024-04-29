@@ -34,5 +34,3 @@ while True:
         if event == 'BACK TO MAIN':
             window.close()
             main()
-
-    window.close() # MAJD

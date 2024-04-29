@@ -52,5 +52,3 @@ while True:
         if event == 'IMPORT DATA':
             window.close()
             data()
-
-    window.close() # MAJD
