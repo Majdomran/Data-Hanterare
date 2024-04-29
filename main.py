@@ -38,15 +38,19 @@ while True:
             break
 
         if event == 'GRAPH':
+            window.close()
             graph()
         
         if event == 'SORT':
+            window.close()
             sort()
         
         if event == 'GUIDE':
+            window.close()
             guide()
         
         if event == 'IMPORT DATA':
+            window.close()
             data()
 
     window.close() # MAJD

@@ -6,6 +6,14 @@ import os
 def main():
     subprocess.run([os.sys.executable, 'main.py'])
 
+def import_data(file_path):
+    if file_path:
+        with open(file_path, 'r') as file:
+            data = file.read()
+        return data
+    else:
+        return None
+
 sg.theme('DarkRed')
 sg.set_options(font='Franklin 14', button_element_size=(6, 3))
 
@@ -33,13 +41,23 @@ while True:
         if event == 'IMPORT DATA':
             file_path = values["file_path"]
             if file_path:
-                sg.popup(f"Selected file: {file_path}")
-        
+                global selected_file_path
+                selected_file_path = file_path
+                sg.popup(f"Data imported from file:\n{selected_file_path}")
+
         if event == 'BACK TO MAIN':
+            window.close()
             main()
 
         if event == 'READ DATA':
-            print('test')
+            if selected_file_path:
+                try:
+                    with open(selected_file_path, 'r') as file:
+                        file_contents = file.read()
+                        sg.popup_scrolled(file_contents)
+                except FileNotFoundError:
+                    sg.popup_error(f'Error: File "{selected_file_path}" not found.')
+
     
         
 

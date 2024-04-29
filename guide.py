@@ -48,6 +48,7 @@ HOW TO SORT:
 
         
         if event == 'BACK TO MAIN':
+            window.close()
             main()
         
 
