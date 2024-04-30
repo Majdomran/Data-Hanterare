@@ -1,14 +1,11 @@
 # Data Hanterare
 
-#### Skappat med python 
+#### Skappat med python
 <hr>
 
 ### HOW TO USE:
+###### - RUN THE 'run.bat' FILE
 
-#### - CHECK OUT THE GUIDE
-#### - RUN THE MAIN FILE IN TERMINAL:
-####  type in terminal:
-    python main.py
 <hr>
 
 ### NOTE:
