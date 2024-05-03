@@ -22,7 +22,7 @@ def readdatan():
                 sg.popup_scrolled(file_contents)
         except FileNotFoundError:
             sg.popup_error(f'Error: File "{selected_file_path}" not found.')
-
+    
 sg.theme('DarkRed')
 sg.set_options(font='Franklin 14', button_element_size=(6, 3))
 

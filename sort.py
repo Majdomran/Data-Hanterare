@@ -2,8 +2,12 @@ import PySimpleGUI as sg
 import subprocess
 import os
 
+
+
+
 def main():
     subprocess.run([os.sys.executable, 'main.py'])
+
 
 sg.theme('DarkRed')
 sg.set_options(font='Franklin 14', button_element_size=(6, 3))
@@ -26,7 +30,7 @@ while True:
             break
 
         if event == 'SORT DATA':
-            print('SORT')
+            print('sort')
         
         if event == 'BACK TO MAIN':
             window.close()
